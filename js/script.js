@@ -20,9 +20,50 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 */
 
+/*
+
+Pseudocoding (istruzioni dentro ciclo for)
+
+IF (i multiplo di 3) {
+    let i = Fizz
+    eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz">${i}</div>`;
+}
+
+ELSE IF (i multiplo di 5) {
+    let i = Buzz
+    eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square buzz">${i}</div>`;
+}
+
+ELSE IF  (i multiplo di 3 && multiplo di 5) {
+    let i = FizzBuzz
+    eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz_buzz">${i}</div>`;
+} ELSE {
+    eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square">${i}</div>`;
+}
+
+
+*/
+
 const eleSquares = document.querySelector('.squares-container');
 for (let i = 0; i <= 100; i++ ) {
 
-    eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square">${i}</div>`;
+    if ((i % 3 == 0) && (i % 5 !== 0)) {
+        // let i = Fizz;
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz">Fizz</div>`;
+    }
+
+    else if ((i % 3 !== 0) && (i % 5 == 0)) {
+        // let i = Buzz ;
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square buzz">Buzz</div>`;
+    }
+
+    else if ((i % 3 == 0) && (i % 5 == 0)) {
+        // let i = FizzBuzz;
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz_buzz">FizzBuzz</div>`;
+    } 
+
+    else {
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square">${i}</div>`;
+    }
 
 }

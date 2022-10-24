@@ -28,7 +28,20 @@ body    {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background-color: lightgreen;
+    padding: 1rem;
+}
+
+.fizz {
+    background-color: salmon;
+}
+
+.buzz {
+    background-color: lightskyblue;
+}
+
+.fizz_buzz {
+    background-color: lightcoral;
 }
