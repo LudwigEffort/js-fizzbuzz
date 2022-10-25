@@ -48,18 +48,18 @@ const eleSquares = document.querySelector('.squares-container');
 for (let i = 1; i <= 100; i++ ) {
 
     if ((i % 3 == 0) && (i % 5 !== 0)) {
-        // let i = Fizz;
-        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz">Fizz</div>`;
+        let i = 'Fizz';
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz">${i}</div>`;
     }
 
     else if ((i % 3 !== 0) && (i % 5 == 0)) {
-        // let i = Buzz ;
-        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square buzz">Buzz</div>`;
+        let i = 'Buzz';
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square buzz">${i}</div>`;
     }
 
     else if ((i % 3 == 0) && (i % 5 == 0)) {
-        // let i = FizzBuzz;
-        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz_buzz">FizzBuzz</div>`;
+        let i = 'FizzBuzz';
+        eleSquares.innerHTML = eleSquares.innerHTML + `<div class="square fizz_buzz">${i}</div>`;
     } 
 
     else {
